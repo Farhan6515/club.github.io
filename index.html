@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<div class="main">
+    <div class="container" id="sinUp" style="display: none;">
+        <form method="post" action="login.php">
+        <h1 class="form-title">Sign Up</h1>
+        <div class="input-group">
+            <label for="name">Enter Name</label><br><br>
+            <i class="fas fa-user"></i>
+            <input type="text" name="name" id="name" placeholder="Name" class="f1" required>
+            
+           
+        </div>
+
+        <div class="input-group">
+            <label for="email">Enter Email</label><br><br>
+            <i class="fas fa-envelope"></i>
+            <input type="email"  name="email" placeholder="Email" class="f1" required>
+            
+        </div>
+
+        <div class="input-group">
+            <label for="password">Set Password</label><br><br>
+            <i class="fas fa-lock"></i>
+            <input type="password"  name="password" placeholder="Password" class="f1">
+            
+        </div><br>
+        <input type="submit" class="btn" value="Sign Up" name="sinUp">
+    </form>
+    <div class="link">
+        <p>Already Have Account</p>
+        <button id="signInBtn" class="f1">Sign In</button>
+    </div>
+    </div>
+
+    <div class="container1" id="sinIn" >
+        <form method="post" action="login.php" >
+        <h1 class="form-title">Sign In</h1>
+
+        <div class="input-group">
+             <label for="email">Enter Email</label><br>
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" placeholder="Email" class="f1" required>
+           
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label><br>
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" name="password" placeholder="Password" class="f1">
+            
+        </div>
+        <br>
+        <input type="submit" class="btn" value="Sign In" name="sinIn">
+       
+    </form>
+    <div class="link">
+        <p>Dont Have Account</p>
+        <button id="signUpBtn" class="f1">Sign Up</button>
+    </div>
+    </div>
+
+
+
+
+</div>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>
